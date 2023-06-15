@@ -20,7 +20,7 @@ const socialLinks = [
     {
         id: 4,
         icon: <GooglePlayIcon/>,
-        url: 'https://play.google.com/store/apps/details?id=bassamalim.hidaya',
+        url: 'https://play.google.com/store/apps/developer?id=BassamAlim',
     }
 ];
 
