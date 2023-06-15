@@ -1,0 +1,9 @@
+.icon {
+    width: 1em;
+    height: 1em;
+    fill: #9CA3AF;
+}
+
+.icon:hover {
+    fill: #6366F1;
+}

@@ -1,32 +1,27 @@
-import {FiGithub, FiGlobe, FiLinkedin, FiTwitter, FiYoutube,} from 'react-icons/fi';
-import AppFooterCopyright from './AppFooterCopyright';
+import {FiGithub, FiGlobe, FiLinkedin} from 'react-icons/fi';
+import GooglePlayIcon from './../../icons/google-play';
 
 const socialLinks = [
     {
         id: 1,
         icon: <FiGlobe/>,
-        url: 'https://www.stoman.me/',
+        url: 'https://www.bassamalim.me/',
     },
     {
         id: 2,
         icon: <FiGithub/>,
-        url: 'https://github.com/realstoman',
+        url: 'https://github.com/BassamAlim',
     },
     {
         id: 3,
-        icon: <FiTwitter/>,
-        url: 'https://twitter.com/realstoman',
+        icon: <FiLinkedin/>,
+        url: 'https://www.linkedin.com/in/bassam-abdulrahim',
     },
     {
         id: 4,
-        icon: <FiLinkedin/>,
-        url: 'https://www.linkedin.com/in/realstoman',
-    },
-    {
-        id: 5,
-        icon: <FiYoutube/>,
-        url: 'https://www.youtube.com/c/realstoman',
-    },
+        icon: <GooglePlayIcon/>,
+        url: 'https://play.google.com/store/apps/details?id=bassamalim.hidaya',
+    }
 ];
 
 const AppFooter = () => {
@@ -53,8 +48,6 @@ const AppFooter = () => {
                         ))}
                     </ul>
                 </div>
-
-                <AppFooterCopyright/>
             </div>
         </div>
     );
