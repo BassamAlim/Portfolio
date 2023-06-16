@@ -1,39 +1,50 @@
-import AboutMeBio from '../components/about/AboutMeBio';
-import AboutCounter from '../components/about/AboutCounter';
-import AboutClients from '../components/about/AboutClients';
-import {AboutMeProvider} from '../context/AboutMeContext';
 import {motion} from 'framer-motion';
+import UniversityLogo from '../assets/university-logo.png';
 
 const About = () => {
     return (
-        <AboutMeProvider>
-            <motion.div
-                initial={{opacity: 0}}
-                animate={{opacity: 1, delay: 1}}
-                exit={{opacity: 0}}
-                className="container mx-auto"
-            >
-                <AboutMeBio/>
-            </motion.div>
+        <motion.div
+            initial={{opacity: 0}}
+            animate={{opacity: 1, delay: 1}}
+            exit={{opacity: 0}}
+            className="container mx-auto"
+        >
+            <div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
+                <div className="w-full sm:w-1/4 mb-7 sm:mb-0">
+                </div>
 
-            {/** Counter without paddings */}
-            <motion.div
-                initial={{opacity: 0}}
-                animate={{opacity: 1, delay: 1}}
-                exit={{opacity: 0}}
-            >
-                <AboutCounter/>
-            </motion.div>
+                <div className="font-general-regular w-full sm:w-3/4 text-left">
+                    <p
+                        className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"
+                    >
+                        I am a dedicated senior Computer Science student at King Saud University,
+                        with experience in Android Development and Data Science,
+                        and excels in programming and problem solving.
+                    </p>
 
-            <motion.div
-                initial={{opacity: 0}}
-                animate={{opacity: 1, delay: 1}}
-                exit={{opacity: 0}}
-                className="container mx-auto"
-            >
-                <AboutClients/>
-            </motion.div>
-        </AboutMeProvider>
+                    <h2
+                        className="mt-10 mb-4 text-ternary-dark dark:text-ternary-light text-2xl font-general-bold"
+                    >
+                        Education
+                    </h2>
+
+                    <div className="flex mb-8">
+                        <img
+                            src={UniversityLogo}
+                            alt="University Logo"
+                            className="mr-10"
+                            style={{width: '25%', height: 'auto'}}
+                        />
+
+                        <span className="text-lg text-ternary-dark dark:text-ternary-light">
+                            <span className="font-general-bold">King Saud University</span> <br/>
+                            Bachelor in Computer Science <br/>
+                            2019 - 2023
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </motion.div>
     );
 };
 

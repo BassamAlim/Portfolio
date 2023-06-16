@@ -7,11 +7,13 @@ import AppHeader from './components/shared/AppHeader';
 import './css/App.css';
 import UseScrollToTop from './hooks/useScrollToTop';
 
-const About = lazy(() => import('./pages/AboutMe'));
-const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/AboutMe'));
+const Skills = lazy(() => import('./pages/Skills'));
+const Courses = lazy(() => import('./pages/Courses'));
 const Projects = lazy(() => import('./pages/Projects'));
 const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
+const Contact = lazy(() => import('./pages/Contact.jsx'));
 
 
 function App() {
@@ -24,13 +26,17 @@ function App() {
                     <Suspense fallback={""}>
                         <Routes>
                             <Route path="/" element={<Home/>}/>
-                            <Route path="projects" element={<Projects/>}/>
-                            <Route
-                                path="projects/single-project"
-                                element={<ProjectSingle/>}
-                            />
 
                             <Route path="about" element={<About/>}/>
+
+                            <Route path="skills" element={<Skills/>}/>
+
+                            <Route path="courses" element={<Courses/>}/>
+
+                            <Route path="projects" element={<Projects/>}/>
+
+                            <Route path="projects/single-project" element={<ProjectSingle/>}/>
+
                             <Route path="contact" element={<Contact/>}/>
                         </Routes>
                     </Suspense>
