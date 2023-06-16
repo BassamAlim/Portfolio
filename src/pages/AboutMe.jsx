@@ -29,18 +29,18 @@ const About = () => {
                     </h2>
 
                     <div className="flex mb-8">
-                        <img
-                            src={UniversityLogo}
-                            alt="University Logo"
-                            className="mr-10"
-                            style={{width: '25%', height: 'auto'}}
-                        />
-
-                        <span className="text-lg text-ternary-dark dark:text-ternary-light">
+                        <span className="text-lg text-ternary-dark dark:text-ternary-light mr-10">
                             <span className="font-general-bold">King Saud University</span> <br/>
                             Bachelor in Computer Science <br/>
                             2019 - 2023
                         </span>
+
+                        <img
+                            src={UniversityLogo}
+                            alt="University Logo"
+                            className="ml-8"
+                            style={{width: '20%', height: 'auto'}}
+                        />
                     </div>
                 </div>
             </div>

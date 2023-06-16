@@ -13,13 +13,13 @@ const ProjectSingle = ({title, category, image}) => {
             }}
         >
             <Link to="/projects/single-project" aria-label="Single Project">
-                <div
-                    className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
-                    <div>
+                <div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
+                    <div className="flex justify-center items-center" style={{height: '21.9em'}}>
                         <img
                             src={image}
                             className="rounded-t-xl border-none"
                             alt="Single Project"
+                            style={{maxHeight: '21.9em'}}
                         />
                     </div>
                     <div className="text-center px-4 py-6">

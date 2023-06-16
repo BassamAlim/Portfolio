@@ -1,17 +1,16 @@
-// Import assets
-import WebImage1 from '../assets/web-project-1.jpg';
-import WebImage2 from '../assets/web-project-2.jpg';
-import MobileImage1 from '../assets/mobile-project-1.jpg';
-import MobileImage2 from '../assets/mobile-project-2.jpg';
 import UIImage1 from '../assets/ui-project-1.jpg';
 import UIImage2 from '../assets/ui-project-2.jpg';
+import AirAwareCover from '../assets/airaware-cover.png';
+import AirAwareWebSinglePredictScreen from '../assets/airaware-web-single-predict-screen.png';
+import AirAwareAndroidSinglePredictScreen from '../assets/airaware-android-single-predict-screen.jpg';
+import HidayaCover from '../assets/hidaya-cover.png';
 
 export const projectsData = [
     {
         id: 1,
-        title: 'Google Health Platform',
-        category: 'Web Application',
-        img: WebImage2,
+        title: 'AirAware',
+        category: 'Machine Learning',
+        img: AirAwareCover,
         ProjectHeader: {
             title: 'Project Management UI - From Context',
             publishDate: 'Jul 26, 2021',
@@ -20,32 +19,42 @@ export const projectsData = [
     },
     {
         id: 2,
-        title: 'Phoenix Digital Agency',
-        category: 'Mobile Application',
-        img: MobileImage2,
+        title: 'AirAware Web Application',
+        category: 'Web Application',
+        img: AirAwareWebSinglePredictScreen,
+        ProjectHeader: {
+            title: 'Project Management UI - From Context',
+            publishDate: 'Jul 26, 2021',
+            tags: 'UI / Frontend',
+        },
     },
     {
         id: 3,
-        title: 'Project Management UI',
-        category: 'UI/UX Design',
-        img: UIImage1,
+        title: 'AirAware Mobile Application',
+        category: 'Mobile Application',
+        img: AirAwareAndroidSinglePredictScreen,
+        ProjectHeader: {
+            title: 'Project Management UI - From Context',
+            publishDate: 'Jul 26, 2021',
+            tags: 'UI / Frontend',
+        },
     },
     {
         id: 4,
-        title: 'Cloud Storage Platform',
-        category: 'UI/UX Design',
-        img: UIImage2,
+        title: 'Hidaya',
+        category: 'Mobile Application',
+        img: HidayaCover,
     },
     {
         id: 5,
-        title: 'React Social App',
+        title: 'Ser',
         category: 'Mobile Application',
-        img: MobileImage1,
+        img: UIImage1,
     },
     {
         id: 6,
-        title: 'Apple Design System',
-        category: 'Web Application',
-        img: WebImage1,
-    },
+        title: 'KSA-Map',
+        category: 'Desktop Application',
+        img: UIImage2,
+    }
 ];

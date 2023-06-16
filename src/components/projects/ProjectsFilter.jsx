@@ -1,8 +1,8 @@
 const selectOptions = [
-    'Web Application',
     'Mobile Application',
-    'UI/UX Design',
-    'Branding',
+    'Web Application',
+    'Machine Learning',
+    'Desktop Application'
 ];
 
 const ProjectsFilter = ({setSelectProject}) => {
