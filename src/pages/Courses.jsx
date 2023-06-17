@@ -1,8 +1,13 @@
+import CoursesGrid from '../components/courses/CoursesGrid';
+import {CoursesProvider} from '../context/CoursesContext';
+
 const Courses = () => {
     return (
-        <div>
-            <h1>Courses</h1>
-        </div>
+        <CoursesProvider>
+            <div className="container mx-auto">
+                <CoursesGrid/>
+            </div>
+        </CoursesProvider>
     );
 };
 
