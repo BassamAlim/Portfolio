@@ -15,7 +15,7 @@ const About = () => {
 
                 <div className="font-general-regular w-full sm:w-3/4 text-left">
                     <p
-                        className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"
+                        className="text-2xl mb-4 text-ternary-dark dark:text-ternary-light text-lg"
                     >
                         I am a dedicated senior Computer Science student at King Saud University,
                         with experience in Android Development and Data Science,

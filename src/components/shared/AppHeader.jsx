@@ -5,11 +5,9 @@ import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import logoLight from '../../assets/logo-light.svg';
 import logoDark from '../../assets/logo-dark.svg';
 import {motion} from 'framer-motion';
-import Button from '../reusable/Button';
 
 const AppHeader = () => {
     const [showMenu, setShowMenu] = useState(false);
-    const [showModal, setShowModal] = useState(false);
     const [activeTheme, setTheme] = useThemeSwitcher();
 
     function toggleMenu() {
@@ -17,20 +15,6 @@ const AppHeader = () => {
             setShowMenu(true);
         } else {
             setShowMenu(false);
-        }
-    }
-
-    function showHireMeModal() {
-        if (!showModal) {
-            document
-                .getElementsByTagName('html')[0]
-                .classList.add('overflow-y-hidden');
-            setShowModal(true);
-        } else {
-            document
-                .getElementsByTagName('html')[0]
-                .classList.remove('overflow-y-hidden');
-            setShowModal(false);
         }
     }
 
