@@ -14,7 +14,9 @@ export const coursesData = [
     {
         id: 1,
         title: 'Applied Data Science with Python',
+        date: 'Sep 2020',
         category: 'Data Science',
+        tags: ['Data Science', 'Machine Learning', 'Data Mining', 'Data Analysis', 'Data Visualization', 'Text Mining', 'Social Network Analysis', 'Python'],
         source: 'Provided by SDAIA, authorized by the University of Michigan and offered through Coursera.',
         certificate: DSSCert,
         subCourses: [
@@ -53,7 +55,9 @@ export const coursesData = [
     {
         id: 2,
         title: 'Machine Learning',
+        date: 'Mar 2020',
         category: 'Machine Learning',
+        tags: ['Machine Learning', 'Supervised Learning', 'Unsupervised Learning', 'Reinforcement Learning', 'Python'],
         source: 'Authorized by DeepLearning.AI, Stanford University and offered through Coursera.',
         certificate: MLSCert,
         subCourses: [
@@ -80,8 +84,12 @@ export const coursesData = [
     {
         id: 3,
         title: 'Neural Networks and Deep Learning',
+        date: 'Aug 2020',
         category: 'Machine Learning',
+        tags: ['Machine Learning', 'Deep Learning', 'Neural Networks', 'Python'],
         source: 'Provided by SDAIA, Authorized by DeepLearning.AI and offered through Coursera.',
         certificate: NNCert
     }
 ]
+
+export default coursesData;

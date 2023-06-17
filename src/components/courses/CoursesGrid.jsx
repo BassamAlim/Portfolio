@@ -38,20 +38,14 @@ const CoursesGrid = () => {
                 {selectCourse
                     ? selectCoursesByCategory.map((course) => (
                         <CourseSingle
-                            title={course.title}
-                            category={course.category}
-                            certificate={course.certificate}
-                            key={course.id}
+                            courseData={course}
                         />
                     ))
                     : courses.map((course) => (
-                            <CourseSingle
-                                title={course.title}
-                                category={course.category}
-                                certificate={course.certificate}
-                                key={course.id}
-                            />
-                        ))}
+                        <CourseSingle
+                            courseData={course}
+                        />
+                    ))}
             </div>
         </section>
     );

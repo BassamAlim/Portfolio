@@ -34,11 +34,11 @@ function App() {
 
                             <Route path="courses" element={<Courses/>}/>
 
-                            <Route path="courses/single-course" element={<CourseSingle/>}/>
+                            <Route path="courses/single-course/:id" element={<CourseSingle/>}/>
 
                             <Route path="projects" element={<Projects/>}/>
 
-                            <Route path="projects/single-project" element={<ProjectSingle/>}/>
+                            <Route path="projects/single-project/:id" element={<ProjectSingle/>}/>
 
                             <Route path="contact" element={<Contact/>}/>
                         </Routes>

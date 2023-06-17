@@ -1,8 +1,10 @@
 import {useContext} from 'react';
 import SingleCourseContext from '../../context/SingleCourseContext';
+import Courses from '../../data/courses';
 
-const CourseInfo = () => {
+const CourseInfo = (id) => {
     const {singleCourseData} = useContext(SingleCourseContext);
+    const data = Courses[id.id-1]
 
     return (
         <div className="block sm:flex gap-0 sm:gap-10 mt-14">

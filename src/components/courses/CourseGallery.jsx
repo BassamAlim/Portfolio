@@ -1,8 +1,10 @@
 import {useContext} from 'react';
 import SingleCourseContext from '../../context/SingleCourseContext';
+import Courses from '../../data/courses';
 
-const CourseGallery = () => {
+const CourseGallery = (id) => {
     const {singleCourseData} = useContext(SingleCourseContext);
+    const data = Courses[id.id-1]
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">

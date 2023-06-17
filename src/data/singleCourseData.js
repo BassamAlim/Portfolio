@@ -148,7 +148,7 @@ export const singleCourseData = {
                 id: 4,
                 title: 'Kabul Mobile App UI',
                 img: Image3,
-            },
-        ],
-    },
+            }
+        ]
+    }
 };

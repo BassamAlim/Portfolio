@@ -1,27 +1,39 @@
-import {useContext} from 'react';
 import {FiClock, FiTag} from 'react-icons/fi';
-import SingleCourseContext from '../../context/SingleCourseContext';
+import Courses from '../../data/courses';
 
-const CourseSingleHeader = () => {
-    const {singleCourseData} = useContext(SingleCourseContext);
+const CourseSingleHeader = (id) => {
+    const data = Courses[id.id-1]
 
     return (
         <div>
-            <p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7">
-                {singleCourseData.CourseHeader.title}
+            <p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-6">
+                {data.title}
             </p>
+
+            <p className="font-general-medium text-left text-xl sm:text-2xl text-primary-dark dark:text-primary-light mb-8">
+                {data.source}
+            </p>
+
             <div className="flex">
                 <div className="flex items-center mr-10">
                     <FiClock className="text-lg text-ternary-dark dark:text-ternary-light"/>
                     <span className="font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
-						{singleCourseData.CourseHeader.publishDate}
+						{data.date}
 					</span>
                 </div>
                 <div className="flex items-center">
-                    <FiTag className="text-lg text-ternary-dark dark:text-ternary-light"/>
-                    <span className="font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
-						{singleCourseData.CourseHeader.tags}
-					</span>
+                    <FiTag className="text-lg text-ternary-dark dark:text-ternary-light mr-1"/>
+
+                    {
+                        data.tags.map((tag, index) => (
+                            <div
+                                key={index}
+                                className="rounded-xl bg-primary-light dark:bg-ternary-dark p-2 font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light"
+                            >
+                                {tag}
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         </div>
