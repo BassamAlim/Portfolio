@@ -109,12 +109,13 @@ const AppHeader = () => {
                     }
                 >
                     <Link
-                        to="/projects"
-                        className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-                        aria-label="Projects"
+                        to="/"
+                        className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+                        aria-label="Home"
                     >
-                        Projects
+                        Home
                     </Link>
+
                     <Link
                         to="/about"
                         className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
@@ -122,6 +123,31 @@ const AppHeader = () => {
                     >
                         About Me
                     </Link>
+
+                    <Link
+                        to="/skills"
+                        className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+                        aria-label="Skills"
+                    >
+                        Skills
+                    </Link>
+
+                    <Link
+                        to="/courses"
+                        className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+                        aria-label="Courses"
+                    >
+                        Courses
+                    </Link>
+
+                    <Link
+                        to="/projects"
+                        className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+                        aria-label="Projects"
+                    >
+                        Projects
+                    </Link>
+
                     <Link
                         to="/contact"
                         className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
@@ -129,16 +155,6 @@ const AppHeader = () => {
                     >
                         Contact
                     </Link>
-                    <div
-                        className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-						<span
-                            onClick={showHireMeModal}
-                            className="font-general-medium sm:hidden block text-left text-md bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
-                            aria-label="Hire Me Button"
-                        >
-							<Button title="Hire Me"/>
-						</span>
-                    </div>
                 </div>
 
                 {/* Header links large screen */}

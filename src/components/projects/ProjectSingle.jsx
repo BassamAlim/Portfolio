@@ -9,7 +9,7 @@ const ProjectSingle = ({title, category, image}) => {
             transition={{
                 ease: 'easeInOut',
                 duration: 0.7,
-                delay: 0.15,
+                delay: 0.15
             }}
         >
             <Link to="/projects/single-project" aria-label="Single Project">
