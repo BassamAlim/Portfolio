@@ -6,8 +6,6 @@ import ProjectsFilter from './ProjectsFilter';
 const ProjectsGrid = () => {
     const {
         projects,
-        searchProject,
-        searchProjectsByTitle,
         selectProject,
         setSelectProject,
         selectProjectsByCategory,
@@ -46,16 +44,7 @@ const ProjectsGrid = () => {
                             key={project.id}
                         />
                     ))
-                    : searchProject
-                        ? searchProjectsByTitle.map((project) => (
-                            <ProjectSingle
-                                title={project.title}
-                                category={project.category}
-                                image={project.img}
-                                key={project.id}
-                            />
-                        ))
-                        : projects.map((project) => (
+                    : projects.map((project) => (
                             <ProjectSingle
                                 title={project.title}
                                 category={project.category}

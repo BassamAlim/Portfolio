@@ -7,20 +7,7 @@ export const CoursesContext = createContext();
 // Create the projects context provider
 export const CoursesProvider = (props) => {
     const [courses, setCourses] = useState(coursesData);
-    const [searchCourses, setSearchCourses] = useState('');
     const [selectCourse, setSelectCourse] = useState('');
-
-    // Search projects by project title
-    const searchCoursesByTitle = courses.filter((item) => {
-        const result = item.title
-            .toLowerCase()
-            .includes(searchCourses.toLowerCase())
-            ? item
-            : searchCourses === ''
-                ? item
-                : '';
-        return result;
-    });
 
     // Select projects by project category
     const selectCoursesByCategory = courses.filter((item) => {
@@ -34,9 +21,6 @@ export const CoursesProvider = (props) => {
             value={{
                 courses: courses,
                 setCourses: setCourses,
-                searchCourses: searchCourses,
-                setSearchCourse: setSearchCourses,
-                searchCoursesByTitle: searchCoursesByTitle,
                 selectCourse: selectCourse,
                 setSelectCourse: setSelectCourse,
                 selectCoursesByCategory: selectCoursesByCategory,

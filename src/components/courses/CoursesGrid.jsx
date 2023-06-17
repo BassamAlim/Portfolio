@@ -6,8 +6,6 @@ import CoursesFilter from './CoursesFilter';
 const CoursesGrid = () => {
     const {
         courses,
-        searchCourses,
-        searchCoursesByTitle,
         selectCourse,
         setSelectCourse,
         selectCoursesByCategory,
@@ -46,16 +44,7 @@ const CoursesGrid = () => {
                             key={course.id}
                         />
                     ))
-                    : searchCourses
-                        ? searchCoursesByTitle.map((course) => (
-                            <CourseSingle
-                                title={course.title}
-                                category={course.category}
-                                certificate={course.certificate}
-                                key={course.id}
-                            />
-                        ))
-                        : courses.map((course) => (
+                    : courses.map((course) => (
                             <CourseSingle
                                 title={course.title}
                                 category={course.category}
