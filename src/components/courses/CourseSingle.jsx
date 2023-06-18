@@ -2,7 +2,7 @@ import {motion} from 'framer-motion';
 import {Link} from 'react-router-dom';
 
 const CourseSingle = (courseData) => {
-    let data = courseData.courseData;
+    const data = courseData.courseData;
 
     return (
         <motion.div
@@ -21,7 +21,7 @@ const CourseSingle = (courseData) => {
                 >
                     <div className="flex justify-center items-center" style={{height: '19.5em', maxHeight: '19.5em', minHeight: '19.5em'}}>
                         <img
-                            src={data.certificate}
+                            src={data.certificates[0]}
                             className="rounded-t-xl border-none"
                             alt="Single Course"
                             style={{maxHeight: '19.5em'}}
