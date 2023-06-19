@@ -1,4 +1,4 @@
-import Courses from '../../data/courses';
+import {Courses} from '../../data/courses';
 import CourseSingle from "./CourseSingle";
 
 const SubCourses = ({id}) => {

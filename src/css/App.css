@@ -1,7 +1,7 @@
-/*== 
- * React & TailwindCSS Portfolio Main CSS File
- * Powered by: @realstoman
-*/
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
     font-family: 'GeneralSans-Variable';

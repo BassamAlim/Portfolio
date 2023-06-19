@@ -1,8 +1,10 @@
-import {useContext} from 'react';
-import SingleProjectContext from '../../context/SingleProjectContext';
+import {Projects} from "../../data/projects";
+import {useContext} from "react";
+import SingleProjectContext from "../../context/SingleProjectContext";
 
-const ProjectRelatedProjects = () => {
+const SubProjects = ({id}) => {
     const {singleProjectData} = useContext(SingleProjectContext);
+    const data = Projects.find((project) => project.id.toString() === id)
 
     return (
         <div className="mt-10 pt-10 sm:pt-14 sm:mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
@@ -26,4 +28,4 @@ const ProjectRelatedProjects = () => {
     );
 };
 
-export default ProjectRelatedProjects;
+export default SubProjects;

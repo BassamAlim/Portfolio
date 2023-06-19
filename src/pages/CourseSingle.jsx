@@ -1,9 +1,8 @@
 import SubCourses from '../components/courses/SubCourses';
 import {motion} from 'framer-motion';
-import {SingleCourseProvider} from "../context/SingleCourseContext";
 import CourseHeader from "../components/courses/CourseHeader";
 import CourseCertView from "../components/courses/CourseCertView";
-import { useParams } from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 
 const CourseSingle = () => {
     const { id } = useParams();
@@ -19,11 +18,9 @@ const CourseSingle = () => {
             }}
             className="container mx-auto mt-5 sm:mt-10"
         >
-            <SingleCourseProvider>
-                <CourseHeader id={id}/>
-                <CourseCertView id={id}/>
-                {!id.includes('.') && <SubCourses id={id}/>}
-            </SingleCourseProvider>
+            <CourseHeader id={id}/>
+            <CourseCertView id={id}/>
+            {!id.includes('.') && <SubCourses id={id}/>}
         </motion.div>
     );
 };

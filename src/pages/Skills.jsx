@@ -1,19 +1,19 @@
 import Skill from "../components/skills/SkillView";
-import skills from "../data/skills";
+import Skills from "../data/skills";
 
-const Courses = () => {
+const SkillsScreen = () => {
     return (
         <div
             className="grid grid-cols-2"
             style={{marginRight: '10em', marginLeft: '10em'}}
         >
             {
-                skills.map((skill) => (
-                    <Skill skillName={skill.name} icon={skill.icon}/>
+                Skills.map((skill) => (
+                    <Skill skillData={skill}/>
                 ))
             }
         </div>
     );
 };
 
-export default Courses;
+export default SkillsScreen;

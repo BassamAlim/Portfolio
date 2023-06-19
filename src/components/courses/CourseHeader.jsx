@@ -1,5 +1,5 @@
 import {FiClock, FiTag} from 'react-icons/fi';
-import Courses from '../../data/courses';
+import {Courses} from '../../data/courses';
 
 const CourseSingleHeader = ({id}) => {
     const data = Courses.find((course) => course.id.toString() === id)
@@ -21,9 +21,9 @@ const CourseSingleHeader = ({id}) => {
 						{data.date}
 					</span>
                 </div>
+
                 <div className="flex items-center">
                     <FiTag className="text-lg text-ternary-dark dark:text-ternary-light mr-1"/>
-
                     {
                         data.tags.map((tag, index) => (
                             <div

@@ -1,11 +1,14 @@
 import ProjectGallery from '../components/projects/ProjectGallery';
 import ProjectHeader from '../components/projects/ProjectHeader';
-import ProjectInfo from '../components/projects/ProjectInfo';
-import ProjectRelatedProjects from '../components/projects/ProjectRelatedProjects';
+import Technologies from '../components/projects/Technologies';
+import SubProjects from '../components/projects/SubProjects';
 import {SingleProjectProvider} from '../context/SingleProjectContext';
 import {motion} from 'framer-motion';
+import {useParams} from 'react-router-dom';
 
 const ProjectSingle = () => {
+    const { id } = useParams();
+
     return (
         <motion.div
             initial={{opacity: 0}}
@@ -18,10 +21,10 @@ const ProjectSingle = () => {
             className="container mx-auto mt-5 sm:mt-10"
         >
             <SingleProjectProvider>
-                <ProjectHeader/>
-                <ProjectGallery/>
-                <ProjectInfo/>
-                <ProjectRelatedProjects/>
+                <ProjectHeader id={id}/>
+                <Technologies id={id}/>
+                <ProjectGallery id={id}/>
+                {/*{!id.includes('.') && <SubProjects id={id}/>}*/}
             </SingleProjectProvider>
         </motion.div>
     );

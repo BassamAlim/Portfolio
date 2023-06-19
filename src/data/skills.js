@@ -1,70 +1,70 @@
-import * as icons from "../components/skills/icons"
+import {Icons} from "../components/Icons";
 
-const skills = [
+const Skills = [
     {
         name: "Android Development",
-        icon: <icons.AndroidIcon/>
+        Icon: Icons.Android
     },
     {
         name: "Backend Development",
-        icon: <icons.BackendIcon/>
+        Icon: Icons.Backend
     },
     {
         name: "Data Science & Machine Learning",
-        icon: <icons.MachineLearningIcon/>
+        Icon: Icons.MachineLearning
     },
     {
         name: "Java",
-        icon: <icons.JavaIcon/>
+        Icon: Icons.Java
     },
     {
         name: "Python",
-        icon: <icons.PythonIcon/>
+        Icon: Icons.Python
 },
     {
         name: "Kotlin",
-        icon: <icons.KotlinIcon/>
+        Icon: Icons.Kotlin
     },
     {
         name: "JavaScript",
-        icon: <icons.JSIcon/>
+        Icon: Icons.JavaScript
     },
     {
         name: "C",
-        icon: <icons.CIcon/>
+        Icon: Icons.C
     },
     {
         name: "SQL",
-        icon: <icons.SQLIcon/>
+        Icon: Icons.SQL
     },
     {
         name: "Cloud Computing",
-        icon: <icons.CloudComputingIcon/>
+        Icon: Icons.CloudComputing
     },
     {
         name: "Data Structures",
-        icon: <icons.DataStructuresIcon/>
+        Icon: Icons.DataStructures
     },
     {
         name: "Algorithms",
-        icon: <icons.AlgorithmsIcon/>
+        Icon: Icons.Algorithms
     },
     {
         name: "Office 365",
-        icon: <icons.Office365Icon/>
+        Icon: Icons.Office365
     },
     {
         name: "Problem Solving",
-        icon: <icons.ProblemSolvingIcon/>
+        Icon: Icons.ProblemSolving
     },
     {
         name: "English",
-        icon: <icons.EnglishIcon/>
+        Icon: Icons.English
     },
     {
         name: "Soft Skills",
-        icon: <icons.SoftSkillsIcon/>
+        Icon: Icons.SoftSkills
     }
 ];
 
-export default skills;
+export default Skills;

@@ -12,7 +12,7 @@ import UnsupervisedLearningCert from '../assets/certificates/Unsupervised Learni
 import NNCert from '../assets/certificates/Nueral Networks.png';
 import CppCert from '../assets/certificates/C++.png';
 
-export const coursesData = [
+export const Courses = [
     {
         id: 1,
         title: 'Applied Data Science with Python',
@@ -122,5 +122,3 @@ export const coursesData = [
         certificates: [CppCert]
     }
 ]
-
-export default coursesData;

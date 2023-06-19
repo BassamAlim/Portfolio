@@ -37,14 +37,14 @@ const ProjectsGrid = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
                 {selectProject
                     ? selectProjectsByCategory
-                        .filter((project) => project.mainProject)
+                        .filter((project) => Number.isInteger(project.id))
                         .map((project) => (
                         <ProjectSingle
                             data={project}
                         />
                         ))
                         : projects
-                        .filter((project) => project.mainProject)
+                        .filter((project) => Number.isInteger(project.id))
                         .map((project) => (
                             <ProjectSingle
                                 data={project}

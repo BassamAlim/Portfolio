@@ -1,4 +1,4 @@
-import Courses from '../../data/courses';
+import {Courses} from '../../data/courses';
 
 function CourseCertView({id}) {
     const data = Courses.find((course) => course.id.toString() === id)
