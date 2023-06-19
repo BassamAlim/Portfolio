@@ -38,12 +38,12 @@ const CoursesGrid = () => {
                 {selectCourse
                     ? selectCoursesByCategory.map((course) => (
                         <CourseSingle
-                            courseData={course}
+                            data={course}
                         />
                     ))
                     : courses.map((course) => (
                         <CourseSingle
-                            courseData={course}
+                            data={course}
                         />
                     ))}
             </div>

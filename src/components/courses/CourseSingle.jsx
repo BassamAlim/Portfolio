@@ -1,9 +1,7 @@
 import {motion} from 'framer-motion';
 import {Link} from 'react-router-dom';
 
-const CourseSingle = (courseData) => {
-    const data = courseData.courseData;
-
+const CourseSingle = ({data}) => {
     return (
         <motion.div
             initial={{opacity: 0}}

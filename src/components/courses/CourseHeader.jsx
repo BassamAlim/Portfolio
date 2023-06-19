@@ -1,8 +1,8 @@
 import {FiClock, FiTag} from 'react-icons/fi';
 import Courses from '../../data/courses';
 
-const CourseSingleHeader = (id) => {
-    const data = Courses[id.id-1]
+const CourseSingleHeader = ({id}) => {
+    const data = Courses.find((course) => course.id.toString() === id)
 
     return (
         <div>

@@ -1,12 +1,8 @@
 import Courses from '../../data/courses';
 import CourseSingle from "./CourseSingle";
 
-const SubCourses = (id) => {
-    const data = Courses[id.id-1]
-    const subCourses = []
-    data.subCourses.forEach((id) => {
-        subCourses.push(Courses[id-1])
-    })
+const SubCourses = ({id}) => {
+    const subCourses = getSubCourses(parseInt(id))
 
     return (
         <div className="mt-10 pt-10 sm:pt-14 sm:mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
@@ -18,7 +14,7 @@ const SubCourses = (id) => {
                 {subCourses.map((course) => {
                     return (
                         <CourseSingle
-                            courseData={course}
+                            data={course}
                         />
                     );
                 })}
@@ -26,5 +22,15 @@ const SubCourses = (id) => {
         </div>
     );
 };
+
+function getSubCourses(id) {
+    const subCourses = []
+    Courses.forEach((course) => {
+        if (course.id > id && course.id < id + 1) {
+            subCourses.push(course)
+        }
+    })
+    return subCourses
+}
 
 export default SubCourses;

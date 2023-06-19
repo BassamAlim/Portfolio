@@ -1,7 +1,7 @@
 import Courses from '../../data/courses';
 
-function CourseCertView(id) {
-    const data = Courses[id.id-1]
+function CourseCertView({id}) {
+    const data = Courses.find((course) => course.id.toString() === id)
 
     return (
         <div className="text-left">
