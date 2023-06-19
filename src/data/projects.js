@@ -34,7 +34,7 @@ export const Projects = [
         category: 'Machine Learning',
         description: 'A machine learning project that predicts flight delays in Saudi Arabia, Includes many components such as a Web application and a native Android application allowing users to access the machine learning model service.\nIt is a group project (graduation project).',
         tags: ['Data Science', 'Machine Learning', 'Python'],
-        technologies: ['Python', 'FastAPI', 'React', 'Kotlin', 'Jetpack Compose', 'MVVM', 'Hilt', 'Retrofit'],
+        technologies: [Tech.Python, Tech.Android, Tech.Kotlin, Tech.JavaScript, Tech.JetpackCompose, Tech.React, Tech.MVVM, Tech.Hilt, Tech.Retrofit],
         cover: AirAwareCover,
         images: []
     },

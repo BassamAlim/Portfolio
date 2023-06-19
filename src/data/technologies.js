@@ -39,6 +39,6 @@ export const Technologies = {
     },
     Retrofit: {
         name: "Retrofit",
-        Icon: Icons.JetpackCompose
+        Icon: null
     }
 }
