@@ -2,9 +2,9 @@ import ProjectGallery from '../components/projects/ProjectGallery';
 import ProjectHeader from '../components/projects/ProjectHeader';
 import Technologies from '../components/projects/Technologies';
 import SubProjects from '../components/projects/SubProjects';
-import {SingleProjectProvider} from '../context/SingleProjectContext';
 import {motion} from 'framer-motion';
 import {useParams} from 'react-router-dom';
+import {ShareView} from "../components/projects/Share";
 
 const ProjectSingle = () => {
     const { id } = useParams();
@@ -20,12 +20,11 @@ const ProjectSingle = () => {
             }}
             className="container mx-auto mt-5 sm:mt-10"
         >
-            <SingleProjectProvider>
-                <ProjectHeader id={id}/>
-                <Technologies id={id}/>
-                <ProjectGallery id={id}/>
-                {/*{!id.includes('.') && <SubProjects id={id}/>}*/}
-            </SingleProjectProvider>
+            <ProjectHeader id={id}/>
+            <Technologies id={id}/>
+            <ProjectGallery id={id}/>
+            <ShareView id={id}/>
+            {!id.includes('.') && <SubProjects id={id}/>}
         </motion.div>
     );
 };

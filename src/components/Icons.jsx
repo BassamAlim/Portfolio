@@ -14,6 +14,11 @@ import { ReactComponent as Office365Ic } from '../assets/icons/office-365-icon.s
 import { ReactComponent as ProblemSolvingIc } from '../assets/icons/problem-solving-icon.svg';
 import { ReactComponent as EnglishIc } from '../assets/icons/english-icon.svg';
 import { ReactComponent as SoftSkillsIc } from '../assets/icons/soft-skills-icon.svg';
+import { ReactComponent as FastAPIIc } from '../assets/icons/fastapi.svg';
+import { ReactComponent as ReactIc } from '../assets/icons/react.svg';
+import { ReactComponent as JetpackComposeIc } from '../assets/icons/jetpack-compose.svg';
+import { ReactComponent as ArchitectureIc } from '../assets/icons/architecture.svg';
+import { ReactComponent as DaggerIc } from '../assets/icons/dagger.svg';
 
 export const Icons = {
     Android: AndroidIc,
@@ -31,5 +36,10 @@ export const Icons = {
     Office365: Office365Ic,
     ProblemSolving: ProblemSolvingIc,
     English: EnglishIc,
-    SoftSkills: SoftSkillsIc
+    SoftSkills: SoftSkillsIc,
+    FastAPI: FastAPIIc,
+    React: ReactIc,
+    JetpackCompose: JetpackComposeIc,
+    Architecture: ArchitectureIc,
+    Dagger: DaggerIc
 }

@@ -25,7 +25,7 @@ import SerHomeScreen from '../assets/screenshots/ser/home-screen.jpg';
 import SerKeyStoreScreen from '../assets/screenshots/ser/key-store-screen.jpg';
 import SerKeysScreen from '../assets/screenshots/ser/keys-screen.jpg';
 import SerRSAScreen from '../assets/screenshots/ser/rsa-screen.jpg';
-import {Technologies as Tech} from "./Technologies";
+import {Technologies as Tech} from "./technologies";
 
 export const Projects = [
     {
@@ -74,7 +74,7 @@ export const Projects = [
         category: 'Mobile Application',
         description: 'A native Android app originally developed with Java and XML, then migrated to Kotlin and Jetpack Compose, using MVVM architecture, Dagger Hilt, and many other technologies.\nAround 15k lines of code, 2000+ users.',
         tags: ['Android', 'Kotlin', 'Jetpack Compose', 'MVVM', 'Hilt'],
-        technologies: [Tech.Android, Tech.Python],
+        technologies: [Tech.Android, Tech.Kotlin, Tech.JetpackCompose, Tech.MVVM, Tech.Hilt],
         cover: HidayaCover,
         images: [HidayaHomeScreen, HidayaPrayersScreen, HidayaQuranScreen, HidayaAthkarScreen, HidayaQiblaScreen, HidayaRecitationsScreen, HidayaSettingsScreen, HidayaMoreScreen]
     },
@@ -84,7 +84,7 @@ export const Projects = [
         category: 'Mobile Application',
         description: 'A native Android app that allows you to encrypt and decrypt text and files using AES and RSA, it also includes a public repository for users to share their public keys.',
         tags: ['Android', 'Kotlin', 'Jetpack Compose', 'MVVM', 'Hilt'],
-        technologies: [Tech.Android, Tech.Python],
+        technologies: [Tech.Android],
         cover: SerCover,
         images: [SerHomeScreen, SerAESScreen, SerRSAScreen, SerKeysScreen, SerKeyStoreScreen]
     },
@@ -94,7 +94,7 @@ export const Projects = [
         category: 'Desktop Application',
         description: 'A windows application implemented using Python, with an interactive map GUI, it solves the Traveling salesman problem for 153 cities in Saudi Arabia using the algorithms: Breadth First Search (BFS), Uniform Cost Search (UCS), Iterative Deepening Search (IDS), Greedy Algorithm, A star Algorithm, Hill Climbing, Simulated Annealing, Genetic Algorithm.',
         tags: ['Desktop', 'Python', 'PyQt5', 'DFS', 'BFS', 'UCS', 'IDS', 'Greedy Algorithm', 'A*', 'Hill Climbing', 'Simulated Annealing', 'Genetic Algorithm'],
-        technologies: [Tech.Android, Tech.Python],
+        technologies: [Tech.Python],
         cover: UIImage2,
         images: []
     }
