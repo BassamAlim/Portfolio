@@ -4,10 +4,12 @@ import Technologies from '../components/projects/Technologies';
 import SubProjects from '../components/projects/SubProjects';
 import {motion} from 'framer-motion';
 import {useParams} from 'react-router-dom';
-import {ShareView} from "../components/projects/Share";
+import {LinksView} from "../components/projects/Links";
+import {Projects} from "../data/projects";
 
 const ProjectSingle = () => {
     const { id } = useParams();
+    const data = Projects.find((project) => project.id.toString() === id);
 
     return (
         <motion.div
@@ -23,7 +25,7 @@ const ProjectSingle = () => {
             <ProjectHeader id={id}/>
             <Technologies id={id}/>
             <ProjectGallery id={id}/>
-            <ShareView id={id}/>
+            {data.links.length > 0 && <LinksView id={id}/>}
             {!id.includes('.') && <SubProjects id={id}/>}
         </motion.div>
     );

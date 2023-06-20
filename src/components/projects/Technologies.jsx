@@ -5,8 +5,8 @@ const Technologies = ({id}) => {
     const data = Projects.find((project) => project.id.toString() === id)
 
     return (
-        <div className="flex mt-14 mb-10 text-left">
-            <p className="mt-4 mr-6 font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light">
+        <div className="my-6 text-left">
+            <p className="mb-4 mt-4 mr-6 font-general-regular text-3xl font-semibold text-ternary-dark dark:text-ternary-light">
                 Technologies
             </p>
 

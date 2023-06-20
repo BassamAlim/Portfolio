@@ -2,8 +2,8 @@ import {useState} from 'react';
 import {FiMenu, FiMoon, FiSun, FiX} from 'react-icons/fi';
 import {Link} from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
-import logoLight from '../../assets/logo-light.svg';
-import logoDark from '../../assets/logo-dark.svg';
+import logoLight from '../../assets/images/logo-light.svg';
+import logoDark from '../../assets/images/logo-dark.svg';
 import {motion} from 'framer-motion';
 
 const AppHeader = () => {

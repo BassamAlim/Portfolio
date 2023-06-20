@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion';
-import UniversityLogo from '../assets/university-logo.png';
+import UniversityLogo from '../assets/images/university-logo.png';
 
 const About = () => {
     return (

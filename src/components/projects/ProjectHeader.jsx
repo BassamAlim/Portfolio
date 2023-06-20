@@ -5,8 +5,8 @@ const ProjectSingleHeader = ({id}) => {
     const data = Projects.find((project) => project.id.toString() === id)
 
     return (
-        <div>
-            <p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7">
+        <div className="my-12">
+            <p className="font-general-medium text-left text-4xl sm:text-5xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-16 mb-8">
                 {data.title}
             </p>
 

@@ -35,7 +35,8 @@ const CoursesGrid = () => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-                {selectCourse
+                {
+                    selectCourse
                     ? selectCoursesByCategory.map((course) => (
                         <CourseSingle
                             data={course}
@@ -45,7 +46,8 @@ const CoursesGrid = () => {
                         <CourseSingle
                             data={course}
                         />
-                    ))}
+                    ))
+                }
             </div>
         </section>
     );
