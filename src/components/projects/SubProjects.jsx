@@ -4,6 +4,8 @@ import ProjectSingle from "./ProjectSingle";
 const SubProjects = ({id}) => {
     const subProjects = getSubProjects(parseInt(id))
 
+    if (subProjects.length === 0) return (<></>)
+
     return (
         <div className="mt-10 pt-10 sm:pt-14 sm:mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
             <p className="font-general-regular text-primary-dark dark:text-primary-light text-3xl font-bold mb-4 sm:mb-8 text-left">

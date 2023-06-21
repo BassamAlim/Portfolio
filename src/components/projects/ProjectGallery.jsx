@@ -9,7 +9,7 @@ const ProjectGallery = ({id}) => {
             {
                 data.images.length > 1 ?
                     data.images.map((image) => (
-                        image.direction === Direction.Vertical ? (
+                        image.direction === Direction.Vertical ?
                             <div key={data.id}>
                                 <img
                                     src={image.img}
@@ -18,7 +18,7 @@ const ProjectGallery = ({id}) => {
                                     key={data.id}
                                 />
                             </div>
-                        ) : (
+                        :
                             <div key={data.id} className="col-span-2 flex justify-center text-center items-center">
                                 <img
                                     src={image.img}
@@ -27,10 +27,9 @@ const ProjectGallery = ({id}) => {
                                     key={data.id}
                                 />
                             </div>
-                        )
                     ))
                     :
-                    data.images[0].direction === Direction.Vertical ? (
+                    data.images[0].direction === Direction.Vertical ?
                         <div key={data.id}>
                             <img
                                 src={data.images[0].img}
@@ -39,7 +38,7 @@ const ProjectGallery = ({id}) => {
                                 key={data.id}
                             />
                         </div>
-                    ) : (
+                    :
                         <div key={data.id} className="col-span-2 flex justify-center text-center items-center">
                             <img
                                 src={data.images[0].img}
@@ -48,7 +47,6 @@ const ProjectGallery = ({id}) => {
                                 key={data.id}
                             />
                         </div>
-                    )
             }
         </div>
     );
