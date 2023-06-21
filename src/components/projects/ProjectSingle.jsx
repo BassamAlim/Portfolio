@@ -13,8 +13,8 @@ const ProjectSingle = ({data}) => {
             }}
         >
             <Link to={`/projects/single-project/${data.id}`} aria-label="Single Project">
-                <div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
-                    <div className="flex justify-center items-center" style={{height: '21.89em'}}>
+                <div className="flex flex-col h-full rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
+                    <div className="flex justify-center">
                         <img
                             src={data.cover}
                             className="rounded-t-xl border-none"
@@ -22,7 +22,7 @@ const ProjectSingle = ({data}) => {
                             style={{maxHeight: '21.89em'}}
                         />
                     </div>
-                    <div className="text-center px-4 py-6">
+                    <div className="flex flex-col h-full items-center justify-center text-center px-4 py-6">
                         <p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
                             {data.title}
                         </p>

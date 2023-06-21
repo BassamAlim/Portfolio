@@ -5,7 +5,7 @@ const ProjectGallery = ({id}) => {
     const data = Projects.find((project) => project.id.toString() === id)
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-4 sm:gap-10 my-12 py-4 sm:py-8 sm:mt-20 border-y-2 border-primary-light dark:border-secondary-dark">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 sm:gap-10 my-12 py-4 sm:py-8 sm:mt-20 border-y-2 border-primary-light dark:border-secondary-dark">
             {  // bug here: the project images show in sub projects
                 data.images.map((image) => (
                     image.direction === Direction.Vertical ?

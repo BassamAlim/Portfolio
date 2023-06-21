@@ -10,7 +10,7 @@ const Technologies = ({id}) => {
                 Technologies
             </p>
 
-            <div className="flex flex-wrap gap-0 sm:gap-2">
+            <div className="flex flex-wrap gap-2">
                 {
                     data.technologies.map((tech) => (
                         <div className="flex items-center rounded-xl bg-primary-light dark:bg-ternary-dark px-5 py-4 font-general-regular leading-none text-primary-dark dark:text-primary-light">

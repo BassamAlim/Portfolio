@@ -22,7 +22,7 @@ const CourseSingleHeader = ({id}) => {
 					</span>
                 </div>
 
-                <div className="flex items-center">
+                <div className="flex flex-wrap gap-2 items-center">
                     <FiTag className="text-lg text-ternary-dark dark:text-ternary-light mr-1"/>
                     {
                         data.tags.map((tag, index) => (

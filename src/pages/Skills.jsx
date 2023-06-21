@@ -4,8 +4,7 @@ import Skills from "../data/skills";
 const SkillsScreen = () => {
     return (
         <div
-            className="grid grid-cols-2 mt-12"
-            style={{marginRight: '10em', marginLeft: '10em'}}
+            className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12 mx-16 sm:mx-44"
         >
             {
                 Skills.map((skill) => (
