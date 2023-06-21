@@ -3,7 +3,7 @@ import HidayaCover from '../assets/screenshots/hidaya/cover.png';
 import SerCover from '../assets/screenshots/ser/cover.png';
 import AAAndroidBatchPredictScreen from '../assets/screenshots/airaware/android/batch-predict-screen.jpg';
 import AAAndroidDashboardScreen from '../assets/screenshots/airaware/android/dashboard-screen.jpg';
-import AAAndroidSinglePredictResultScreen from '../assets/screenshots/airaware/android/single-predict-result-screen.png';
+import AAWebSinglePredictResultScreen from '../assets/screenshots/airaware/web/single-predict-result-screen.png';
 import AAAndroidSinglePredictScreen from '../assets/screenshots/airaware/android/single-predict-screen.jpg';
 import AASystemArchitecture from '../assets/screenshots/airaware/other/system-architecture.png';
 import AAWebAboutUsScreen from '../assets/screenshots/airaware/web/about-us-screen.png';
@@ -78,6 +78,7 @@ export const Projects = [
         cover: AAWebSinglePredictScreen,
         images: [
             {img: AAWebSinglePredictScreen, direction: Direction.Horizontal},
+            {img: AAWebSinglePredictResultScreen, direction: Direction.Horizontal},
             {img: AAWebDashboardScreen, direction: Direction.Horizontal},
             {img: AAWebBatchPredictScreen, direction: Direction.Horizontal},
             {img: AAWebBatchPredictResultScreen, direction: Direction.Horizontal},
@@ -95,7 +96,6 @@ export const Projects = [
         cover: AAAndroidSinglePredictScreen,
         images: [
             {img: AAAndroidSinglePredictScreen, direction: Direction.Vertical},
-            {img: AAAndroidSinglePredictResultScreen, direction: Direction.Vertical},
             {img: AAAndroidBatchPredictScreen, direction: Direction.Vertical},
             {img: AAAndroidDashboardScreen, direction: Direction.Vertical}
         ],

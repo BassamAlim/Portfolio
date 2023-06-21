@@ -4,7 +4,7 @@ import Skills from "../data/skills";
 const SkillsScreen = () => {
     return (
         <div
-            className="grid grid-cols-2"
+            className="grid grid-cols-2 mt-12"
             style={{marginRight: '10em', marginLeft: '10em'}}
         >
             {
