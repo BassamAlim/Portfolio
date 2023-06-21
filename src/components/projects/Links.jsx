@@ -7,7 +7,7 @@ export const LinksView = ({id}) => {
     const links = Projects.find((project) => project.id.toString() === id).links;
 
     return (
-        <div className="my-6">
+        <div className="my-16">
             <p className="mb-4 mr-6 font-general-regular text-3xl font-semibold text-ternary-dark dark:text-ternary-light">
                 Links
             </p>
