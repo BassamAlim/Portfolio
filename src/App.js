@@ -16,7 +16,6 @@ const Projects = lazy(() => import('./pages/Projects'));
 const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
 
-
 function App() {
     return (
         <AnimatePresence>

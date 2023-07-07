@@ -4,10 +4,14 @@ import {Link} from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import logo from '../../assets/images/logo.svg'
 import {motion} from 'framer-motion';
+import useHeaderActivePage from "../../hooks/useHeaderActivePage";
 
 const AppHeader = () => {
     const [showMenu, setShowMenu] = useState(false);
     const [activeTheme, setTheme] = useThemeSwitcher();
+    const [activePage, setPage] = useHeaderActivePage();
+    const activeStyle = "block text-left text-lg text-sky-600 sm:mx-4 mb-2 sm:py-2";
+    const inactiveStyle = "block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2";
 
     function toggleMenu() {
         if (!showMenu) {
@@ -95,6 +99,7 @@ const AppHeader = () => {
                         to="/"
                         className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
                         aria-label="Home"
+                        onClick={() => setPage('home')}
                     >
                         Home
                     </Link>
@@ -103,6 +108,7 @@ const AppHeader = () => {
                         to="/about"
                         className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
                         aria-label="About Me"
+                        onClick={() => setPage('about')}
                     >
                         About Me
                     </Link>
@@ -111,6 +117,7 @@ const AppHeader = () => {
                         to="/skills"
                         className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
                         aria-label="Skills"
+                        onClick={() => setPage('skills')}
                     >
                         Skills
                     </Link>
@@ -119,6 +126,7 @@ const AppHeader = () => {
                         to="/courses"
                         className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
                         aria-label="Courses"
+                        onClick={() => setPage('courses')}
                     >
                         Courses
                     </Link>
@@ -127,6 +135,7 @@ const AppHeader = () => {
                         to="/projects"
                         className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
                         aria-label="Projects"
+                        onClick={() => setPage('projects')}
                     >
                         Projects
                     </Link>
@@ -135,6 +144,7 @@ const AppHeader = () => {
                         to="/contact"
                         className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
                         aria-label="Contact"
+                        onClick={() => setPage('contact')}
                     >
                         Contact
                     </Link>
@@ -144,48 +154,54 @@ const AppHeader = () => {
                 <div className="font-general-medium hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
                     <Link
                         to="/"
-                        className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+                        className={ activePage === 'home' ? activeStyle : inactiveStyle }
                         aria-label="Home"
+                        onClick={() => setPage('home')}
                     >
                         Home
                     </Link>
 
                     <Link
                         to="/about"
-                        className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+                        className={ activePage === 'about' ? activeStyle : inactiveStyle }
                         aria-label="About Me"
+                        onClick={() => setPage('about')}
                     >
                         About Me
                     </Link>
 
                     <Link
                         to="/skills"
-                        className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+                        className={ activePage === 'skills' ? activeStyle : inactiveStyle }
                         aria-label="Skills"
+                        onClick={() => setPage('skills')}
                     >
                         Skills
                     </Link>
 
                     <Link
                         to="/courses"
-                        className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+                        className={ activePage === 'courses' ? activeStyle : inactiveStyle }
                         aria-label="Courses"
+                        onClick={() => setPage('courses')}
                     >
                         Courses
                     </Link>
 
                     <Link
                         to="/projects"
-                        className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+                        className={ activePage === 'projects' ? activeStyle : inactiveStyle }
                         aria-label="Projects"
+                        onClick={() => setPage('projects')}
                     >
                         Projects
                     </Link>
 
                     <Link
                         to="/contact"
-                        className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+                        className={ activePage === 'contact' ? activeStyle : inactiveStyle }
                         aria-label="Contact"
+                        onClick={() => setPage('contact')}
                     >
                         Contact
                     </Link>
