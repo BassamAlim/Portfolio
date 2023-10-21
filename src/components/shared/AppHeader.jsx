@@ -14,11 +14,7 @@ const AppHeader = () => {
     const inactiveStyle = "block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2";
 
     function toggleMenu() {
-        if (!showMenu) {
-            setShowMenu(true);
-        } else {
-            setShowMenu(false);
-        }
+        setShowMenu(!showMenu);
     }
 
     return (
@@ -141,6 +137,15 @@ const AppHeader = () => {
                     </Link>
 
                     <Link
+                        to="/experience"
+                        className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+                        aria-label="Experience"
+                        onClick={() => setPage('experience')}
+                    >
+                        Experience
+                    </Link>
+
+                    <Link
                         to="/contact"
                         className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
                         aria-label="Contact"
@@ -195,6 +200,15 @@ const AppHeader = () => {
                         onClick={() => setPage('projects')}
                     >
                         Projects
+                    </Link>
+
+                    <Link
+                        to="/experience"
+                        className={ activePage === 'experience' ? activeStyle : inactiveStyle }
+                        aria-label="Experience"
+                        onClick={() => setPage('experience')}
+                    >
+                        Experience
                     </Link>
 
                     <Link

@@ -32,7 +32,8 @@ const About = () => {
                         <span className="text-lg text-ternary-dark dark:text-ternary-light">
                             <span className="font-general-bold">King Saud University</span> <br/>
                             Bachelor in Computer Science <br/>
-                            2019 - 2023
+                            2019 - 2023 <br/>
+                            with first-class honors
                         </span>
 
                         <img

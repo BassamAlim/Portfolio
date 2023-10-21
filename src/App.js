@@ -14,6 +14,7 @@ const Courses = lazy(() => import('./pages/Courses'));
 const CourseSingle = lazy(() => import('./pages/CourseSingle.jsx'));
 const Projects = lazy(() => import('./pages/Projects'));
 const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
+const Experience = lazy(() => import('./pages/Experience.jsx'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
                             <Route path="projects" element={<Projects/>}/>
 
                             <Route path="projects/single-project/:id" element={<ProjectSingle/>}/>
+
+                            <Route path="experience" element={<Experience/>}/>
 
                             <Route path="contact" element={<Contact/>}/>
                         </Routes>
